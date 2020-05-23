@@ -30,11 +30,29 @@ body
     width:300px;
     height:400px;
 }
+img {
+  border: 1px solid #ddd;
+  border-radius: 940px;
+  padding: 50px;
+  width: 550px;
+  margin-top:5px;
+}
+
 h1
 {
     margin:0 0 20px 0;
     font-weight: 300;
     font-size: 28px;
+}
+h4
+{
+    
+    font-style: normal;
+    color: black;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    text-align: right;
+    margin-left: 400px;
+    margin-bottom: 500px;
 }
 h2
 {
@@ -84,6 +102,15 @@ input[type="submit"]:focus
     background: #ff5722;
     transition: 0.2s ease;
 }
+h3
+{
+     font-style: normal;
+    font-display: block;
+    color: black;
+     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    text-align: center;
+    margin-top: 50p
+}
 .right-box
 {
     position: absolute;
@@ -118,8 +145,14 @@ input[type="submit"]:focus
     text-align: center;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
-button.social
+button
 {
+    text-decoration-color: white;
+color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    background-color:red;
     margin-bottom: 20px;
     width:220px;
     height:36px;
@@ -151,4 +184,85 @@ input[type="login"]:focus
 {
     background: #ff5722;
     transition: 0.2s ease;
+}
+* {box-sizing: border-box;}
+.card-header * {list-style-type: none;}
+
+.required:after{
+    content:"*";
+    font-weight:bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.card-header {
+    padding: 50px 25px;
+    width: 100%;
+}
+
+.card-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-header ul li {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.days {
+    padding: 10px 0;
+}
+
+.badge1 {
+    position:relative;
+}
+.badge1[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -0.5px;
+    right: -0.5px;
+    font-size: .7em;
+    background: red;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+@media screen and (max-width:720px) {
+
+    .weekdays td,
+    .days td {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.5%;
+    }
+
+    .days td .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.2%;
+    }
 }
